@@ -1,0 +1,177 @@
+@include media-breakpoint(basic) {
+    .header {
+        background-color: $black;
+        height: 60px;
+        & .innerheader {
+            & .profile {
+            & .userImage {
+                width: 35px;
+                height: 35px;
+                cursor: pointer;
+                & img {
+                object-fit: cover;
+                }
+            }
+            }
+            & .notification {
+            & .notificationIcon {
+                width: 20px;
+                & img {
+                    transition: all 0.3s;
+                }
+                &:hover{
+                    & img {
+                        filter: opacity(0.8);
+                    }
+                }
+                &.exitKey {
+                    height: 20px;
+                    display: inline-flex;
+                }
+            }
+            }
+            & .matchTime{
+                font-size: 10px;
+            }
+            & .gamesLogo {
+                height: 22px;
+            }
+                & .backBtn {
+                    cursor: pointer;
+                    width: 18px;
+                    height: 18px;
+                    & img {
+                        transition: all 0.3s;
+                    }
+                    &:hover{
+                        & img {
+                            filter: opacity(0.8);
+                        }
+                    }
+                }
+        }
+        .btn-close {
+            filter: invert(1);
+            opacity: 1;
+        }
+        .brand{
+            width: 100px;
+        }
+        .buttons {
+            & .btn-edit {
+                width: 16px;
+                height: 16px;
+            }
+            & .userprofilename {
+            & .userMailAdd, & .username {
+                font-size: 12px;
+            }
+        }
+        }
+    }
+    .profileOffcanvas {
+        // width: 360px !important;
+        & .offcanvas-header {
+            & .offcanvas-title {
+                & .profileoffcanvasHeader {
+                    background: lighten($black, 10);
+                    height: 100px;
+                    & .innerheader{
+                    & .profile {
+                        & .userImage {
+                        border: 2px solid $theme2;
+                        width: 50px;
+                        height: 50px;
+                        }
+                    }
+                    }
+                    & .upload {
+                        right: -6%;
+                        top: 61%;
+                        width: 20px;
+                        height: 20px;
+                    & label {
+                        cursor: pointer;
+                        overflow: hidden;
+                        transition: all ease 0.5s;
+                        pointer-events: none;
+                        // & img {
+                        // filter: invert(1);
+                        // }
+                    }
+                    & .input-file {
+                        opacity: 0;
+                        cursor: pointer;
+                    }
+                    }
+                    & .userprofilename {
+                        & .userMailAdd {
+                            & span {
+                                width: 16px;
+                                height: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .offcanvas-body {
+            // background: lighten($black, 0);
+            & .innerbody {
+                & .linkBox {
+                    & .tagicon {
+                        width: 22px;
+                        height: 22px;
+                    }
+                    & .linkContent {
+                        font-size: 13px;
+                        &.walletBalance {
+                            color: lighten($theme1, 10);
+                        }
+                    }
+                    transition: all ease-in-out 0.3s;
+                    &:hover {
+                        opacity: 0.9;
+                    }
+                }
+            }
+        }
+        & .profileFooter {
+            height: 100px;
+            background: lighten($black, 10);
+            & .contectText {
+            }
+            & .addlink {
+                text-decoration: none !important;
+            }
+        }
+    }
+    .underlines {
+        border-bottom: 0.6px solid rgba($secondary, 0.5);
+    }
+
+    .offcanvas-backdrop {
+        position: absolute;
+    }
+}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {}
+
+@include media-breakpoint-down(md) {}
+
+@include media-breakpoint-down(sm) {}

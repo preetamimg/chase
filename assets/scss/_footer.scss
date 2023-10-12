@@ -1,0 +1,70 @@
+@include media-breakpoint(basic) {
+    .footer {
+        height: 60px;
+        &.bottomBar {
+            background-color: lighten($black, 10);
+            box-shadow: 0px 0px 6px rgba($white, 0.1);
+        & .innerBar {
+        & .bottombarTabs {
+            & .linkTab {
+            transition: all 0.3s;
+            & .gameImg {
+                height: 20px;
+                & img {
+                    transition: all 0.3s;
+                    filter: brightness(3);
+                }
+            }
+            & .gamesheading {
+                line-height: 100%;
+                font-size: 12px;
+                font-weight: 600;
+                transition: all 0.3s;
+                color: $gray-700;
+            }
+            &:hover {
+                & .gamesheading {
+                color: $white !important;
+                }
+                & .gameImg {
+                    & img {
+                        filter: invert(1);
+                    }
+                }
+            }
+            &.active {
+                & .gameImg {
+                & img {
+                    filter: invert(1) !important;
+                }
+                }
+                & .gamesheading {
+                color: $white !important;
+                }
+            }
+            }
+        }
+        }
+    }
+    }
+}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {}
+
+@include media-breakpoint-down(md) {}
+
+@include media-breakpoint-down(sm) {}

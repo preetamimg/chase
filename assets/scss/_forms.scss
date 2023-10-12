@@ -1,0 +1,97 @@
+// ? @@@@@@@@@@@@@@@@@@@@@@[  forms start  ]@@@@@@@@@@@@@@@@@@@@@@
+@include media-breakpoint(basic) {
+    .form{
+        & .form-select {
+            &:focus{
+                border-color: $white;
+            }
+        }
+        & .form-floating {
+            & .form-control {
+                background-image: none;
+                height: calc(3.1rem + 2px);
+                    &:focus{
+                        border-color: $white;
+                    }
+                &:-webkit-autofill,
+                    &:-webkit-autofill:hover,
+                    &:-webkit-autofill:focus {
+                        -webkit-text-fill-color: $white;
+                        transition: background-color 5000s ease-in-out 0s;
+                        -webkit-background-origin: unset;
+                        caret-color: $white;
+                    }
+            }
+        }
+        & .form-check {
+            & .form-check-input {
+                box-shadow: none;
+                border: 1px solid $white;
+                &:checked{
+                    background-color: $black;
+                }
+            }
+            & .form-check-label, & .form-check-input {
+                cursor: pointer;
+            }
+        }
+        & .input-group {
+            & .input-group-text {
+                & img {
+                    width: 20px;
+                    height: 20px;
+                }
+                & .hiddenImg {
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                & .passwordText {
+                    width: 20px;
+                    height: 100%;
+                    position: relative;
+                    & img{
+                        position: absolute;
+                        inset: 0;
+                        margin: auto;
+                    }
+                    & .hiddenImg {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                    & .showImg {
+                        opacity: 0;
+                        visibility: hidden;
+                    }
+                }
+            }
+        }
+    }
+}
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {}
+
+@include media-breakpoint-down(md) {}
+
+@include media-breakpoint-down(sm) {}
+
+// ! @@@@@@@@@@@@@@@@@@@@@@[  forms start  ]@@@@@@@@@@@@@@@@@@@@@@
+
+
+
+
+
+

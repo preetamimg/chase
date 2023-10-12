@@ -1,0 +1,1187 @@
+// ? @@@@@@@@@@@@@@@@@@@@@@[  forms start  ]@@@@@@@@@@@@@@@@@@@@@@
+[data-page-name="signInPage"] {
+    @include media-breakpoint(basic) {
+        & .innerPage {
+            & .journeyHeading {
+                font-size: 14px;
+                line-height: 24px;
+            }
+            & .informationContent {
+                & .infoIMg {
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+            & .form {
+                & .orviaContent {
+                    & span {
+                        position: relative;
+                        &::before, &::after{
+                            content: '';
+                            width: 10px;
+                            height: 2px;
+                            background-color: rgba($white, 0.5);
+                            position: absolute;
+                            top: 50%;
+                        }
+                        &::before{
+                            left: -15px;
+                        }
+                        &::after{
+                            right: -15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include media-breakpoint-up(sm) {}
+    
+    @include media-breakpoint-up(md) {}
+    
+    @include media-breakpoint-up(lg) {}
+    
+    @include media-breakpoint-up(xl) {}
+    
+    @include media-breakpoint-up(xxl) {}
+    
+    
+    @include media-breakpoint-down(xxl) {}
+    
+    @include media-breakpoint-down(xl) {}
+    
+    @include media-breakpoint-down(lg) {}
+    
+    @include media-breakpoint-down(md) {}
+    
+    @include media-breakpoint-down(sm) {}
+}
+
+// ! @@@@@@@@@@@@@@@@@@@@@@[  forms start  ]@@@@@@@@@@@@@@@@@@@@@@
+
+// ? @@@@@@@@@@@@@@@@@@@@@@[  forms start  ]@@@@@@@@@@@@@@@@@@@@@@
+[data-page-name="indexPage"] {
+
+    @include media-breakpoint(basic) {
+        & .cricketheader {
+            box-shadow: 0px 0px 6px rgba($black, 0.1) !important;
+            z-index: 1;
+            & .navtab {
+                & .nav-item {
+                    & .nav-link {
+                        font-size: 14px;
+                        font-weight: 600;
+                        transition: all 0.3s;
+                        border-bottom: 0.6px solid transparent;
+                        & .gameImg {
+                            height: 20px;
+                            & img {
+                                filter: grayscale(1);
+                                transition: all 0.3s;
+                            }
+                        }
+                        & .gamesheading {
+                            line-height: 100%;
+                        }
+                        &.active {
+                            background: transparent;
+                            border-color: darken($white, 20);
+                            color: $white !important;
+                            & .gameImg {
+                                & img {
+                                    filter: grayscale(0);
+                                }
+                            }
+                        }
+                        &:hover {
+                            color: $white !important;
+                            & .gameImg {
+                                & img {
+                                    filter: grayscale(0);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .tabContents{
+            & .homeUpcomingMatch {
+                & .owl-stage-outer {
+                    padding: 0px;
+                }
+                & .owl-dots {
+                    margin-top: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 5px;
+                    & .owl-dot {
+                        width: 6px;
+                        height: 6px;
+                        border-radius: 6px;
+                        border: .6px solid darken($white, 20);
+                        transition: all 0.3s ease-in-out;
+                        &.active{
+                            width: 15px;
+                            background: darken($white, 20);
+                        }
+                    }
+                }
+            }
+            & .tournamentSection {
+                background: linear-gradient(0deg, lighten($black, 1) 0%, rgba($info, 0.2) 100%);
+                & .tournamentTable {
+                    & .table {
+                        & .tbody {
+                            & tr {
+                                & td {
+                                    padding: 10px 5px;
+                                    &:nth-child(2){
+                                        & .cuntryImg {
+                                            width: 20px;
+                                            height: 20px;
+                                        }
+                                    }
+                                }
+                                &:nth-child(even) {
+                                    background-color: rgba($secondary, 0.5);
+                                }
+                            }
+                        }
+                    }
+                }
+                & .players {
+                    & .playerCard {
+                        margin-top: 35px;
+                        &.firstCard {
+                            background: linear-gradient(0deg, rgba($danger, 1) 0%, rgba($orange, 1) 100%);
+                            & .card-body {
+                                & .capBtn {
+                                    background-color: $orange;
+                                }
+                            }
+                        }
+                        &.secondCard {
+                            background: linear-gradient(0deg, darken($primary, 30) 0%, darken($primary, 15) 100%);
+                            & .card-body {
+                                & .capBtn {
+                                    background-color: $primary;
+                                }
+                            }
+                        }
+                        &.therdCard {
+                            background: linear-gradient(0deg, darken($warning , 30) 0%, darken($info , 15) 100%);
+                            & .card-body {
+                                & .capBtn {
+                                    background-color: darken($warning , 10);
+                                }
+                            }
+                        }
+                        & .crad-img {
+                            box-shadow: 0px 0px 8px 0px $white;
+                            width: 70px;
+                            height: 70px;
+                            border-radius: 100px;
+                            overflow: hidden;
+                            margin-top: -35px;
+                            background-color: $black;
+                            border-bottom: 2px solid $danger;
+                        }
+                        // & .card-body{
+
+                        // }
+                    }
+                }
+            }
+        }
+    }
+    @include media-breakpoint-up(sm) {}
+    
+    @include media-breakpoint-up(md) {}
+    
+    @include media-breakpoint-up(lg) {}
+    
+    @include media-breakpoint-up(xl) {}
+    
+    @include media-breakpoint-up(xxl) {}
+    
+    
+    @include media-breakpoint-down(xxl) {}
+    
+    @include media-breakpoint-down(xl) {}
+    
+    @include media-breakpoint-down(lg) {}
+    
+    @include media-breakpoint-down(md) {}
+    
+    @include media-breakpoint-down(sm) {}
+}
+
+// ! @@@@@@@@@@@@@@@@@@@@@@[  forms start  ]@@@@@@@@@@@@@@@@@@@@@@
+
+// ? @@@@@@@@@@@@@@@@@@@@@@[  forms start  ]@@@@@@@@@@@@@@@@@@@@@@
+[data-page-name="allcontest"] {
+    @include media-breakpoint(basic) {
+        & .innerbody {
+            & .contestentrys {
+                & .enteryImg {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+            
+            & .contestCards {
+                background: linear-gradient(0deg, lighten($black, 10) 0%, lighten($black, 4) 100%);
+                & .card-body{
+                    & .case {
+                        & .caseHeading {
+                            color: lighten($success, 5);
+                        }
+                        & .caseEntry {
+                            & span {
+                                width: 18px;
+                                height: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include media-breakpoint-up(sm) {}
+    
+    @include media-breakpoint-up(md) {}
+    
+    @include media-breakpoint-up(lg) {}
+    
+    @include media-breakpoint-up(xl) {}
+    
+    @include media-breakpoint-up(xxl) {}
+    
+    
+    @include media-breakpoint-down(xxl) {}
+    
+    @include media-breakpoint-down(xl) {}
+    
+    @include media-breakpoint-down(lg) {}
+    
+    @include media-breakpoint-down(md) {}
+    
+    @include media-breakpoint-down(sm) {}
+}
+
+// ! @@@@@@@@@@@@@@@@@@@@@@[  forms start  ]@@@@@@@@@@@@@@@@@@@@@@
+
+
+// ? @@@@@@@@@@@@@@@@@@@@@@[  forms start  ]@@@@@@@@@@@@@@@@@@@@@@
+[data-page-name="morePage"] {
+
+    @include media-breakpoint(basic) {
+        & .innerbody{
+            & .linkingBody {
+                & .linkBox {
+                    & .tagicon {
+                        width: 22px;
+                        height: 22px;
+                    }
+                    & .linkContent {
+                        font-size: 14px;
+                    }
+                    transition: all ease-in-out 0.3s;
+                    &:hover {
+                        opacity: 0.9;
+                    }
+                }
+            }
+        }
+    }
+    @include media-breakpoint-up(sm) {}
+    
+    @include media-breakpoint-up(md) {}
+    
+    @include media-breakpoint-up(lg) {}
+    
+    @include media-breakpoint-up(xl) {}
+    
+    @include media-breakpoint-up(xxl) {}
+    
+    
+    @include media-breakpoint-down(xxl) {}
+    
+    @include media-breakpoint-down(xl) {}
+    
+    @include media-breakpoint-down(lg) {}
+    
+    @include media-breakpoint-down(md) {}
+    
+    @include media-breakpoint-down(sm) {}
+}
+
+// ! @@@@@@@@@@@@@@@@@@@@@@[  forms start  ]@@@@@@@@@@@@@@@@@@@@@@
+
+// ? @@@@@@@@@@@@@@@@@@@@@@[  forms start  ]@@@@@@@@@@@@@@@@@@@@@@
+[data-page-name=""] {
+
+    @include media-breakpoint(basic) {
+    }
+    @include media-breakpoint-up(sm) {}
+    
+    @include media-breakpoint-up(md) {}
+    
+    @include media-breakpoint-up(lg) {}
+    
+    @include media-breakpoint-up(xl) {}
+    
+    @include media-breakpoint-up(xxl) {}
+    
+    
+    @include media-breakpoint-down(xxl) {}
+    
+    @include media-breakpoint-down(xl) {}
+    
+    @include media-breakpoint-down(lg) {}
+    
+    @include media-breakpoint-down(md) {}
+    
+    @include media-breakpoint-down(sm) {}
+}
+
+// ! @@@@@@@@@@@@@@@@@@@@@@[  forms start  ]@@@@@@@@@@@@@@@@@@@@@@
+
+
+// *************** [ Common Scss ] **************
+@include media-breakpoint(basic) {
+    .logoImg {
+        height: 30px;
+    }
+    .matchesCard {
+        box-shadow: 0px 0px 6px rgba($black, 0.08);
+        background-color: lighten($black, 10);
+        & .card-body {
+            & .teamHeadline {
+                & .matchteams,
+                & .notificationOut {
+                    font-size: 12px;
+                }
+                & .matchteams {
+                    color: $white !important;
+                    font-weight: 600 !important;
+                }
+                & .notificationOut {
+                    background: lighten($success, 5);
+                    & span{
+                        width: 4px;
+                        height: 4px;
+                        border-radius: 100%;
+                        background: $white;
+                    }
+                }
+                & .lineupsImg {
+                    width: 18px;
+                }
+            }
+            & .teamHeadline {
+                border-bottom: 0.6px solid rgba($secondary, 0.5);
+            }
+            & .innerBody {
+                & .leftSideTeams {
+                    & .teamLogo {
+                        &::before {
+                            left: -50%;
+                            transform: translate(0%, -50%);
+                            // background: rgba($warning, 0.3);
+                        }
+                    }
+                }
+                & .rightSideTeams {
+                    & .teamLogo {
+                        &::before {
+                            right: -50%;
+                            transform: translate(0%, -50%);
+                            // background: rgba($success, 0.3);
+                        }
+                    }
+                }
+                & .firstTeamsName {
+                    font-size: 12px;
+                }
+                & .team {
+                    & .teamLogo {
+                        width: 40px;
+                        height: 40px;
+                        z-index: 0;
+                        &::before {
+                            content: "";
+                            height: 20px;
+                            width: 100%;
+                            position: absolute;
+                            top: 50%;
+                            z-index: -1;
+                        }
+                    }
+                    & .teamName {
+                        // font-size: 10px;
+                        & span {
+                            width: 20px;
+                            height: 20px;
+                            & img {
+                                filter: brightness(3);
+                            }
+                        }
+                    }
+                }
+                & .matchTimer {
+                    & .pichTime {
+                        font-size: 12px;
+                        color: lighten($success, 5);
+                    }
+                }
+                &.borderBody {
+                    border-bottom: 0.6px solid rgba($secondary, 0.5);
+                }
+            }
+            & .bottomBody {
+                border-top: 0.6px solid rgba($secondary, 0.5);
+                & .winCase {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+        &.featuredCard {
+            & .card-body {
+                & .teamHeadline {
+                    & .notificationOut {
+                        border: .6px solid darken($white, 20);
+                        & span {
+                            width: 18px;
+                            height: 18px;
+                            background: transparent;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .contestPeogressBar {
+        &.progress {
+            height: 6px;
+            // background-color: lighten($black, 30);
+            background-color: $secondary ;
+            & .progress-bar {
+                background-color: $theme2;
+                // background: linear-gradient(90deg, lighten($theme2, 0) 0%, lighten($theme2, 10) 100%);
+            }
+        }
+    }
+
+    // ************ [ Quiz Information Page Start ] ******************
+    .quizInformationPage{
+        & .innerbody {
+            & .contestCards {
+                background: linear-gradient(0deg, lighten($black, 10) 0%, lighten($black, 4) 100%);
+                & .card-body{
+                    & .case {
+                        & .caseHeading {
+                            color: lighten($success, 5);
+                            &.wonBtn {
+                                border: 2px solid lighten($success, 5);
+                                &.defeat {
+                                    color: lighten($danger, 5);
+                                    border-color: lighten($danger, 5);
+                                }
+                            }
+                            
+                        }
+                        & .caseEntry {
+                            & span {
+                                width: 18px;
+                                height: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+            & .quizUserCard {
+                // border-bottom: 0.6px solid rgba($secondary, 0.5) !important;
+                transition: all 0.3s ease-in-out;
+                position: relative;
+                z-index: 0;
+                &::before{
+                    content: '';
+                    height: 100%;
+                    width: 4px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: -1;
+                    transition: all 0.3s ease-in-out;
+                    background: linear-gradient(0deg, lighten($black, 10) 0%, lighten($black, 4) 100%) !important;
+                }
+                & .card-body {
+                    & .userImg {
+                        width: 45px;
+                        height: 45px;
+                        border: 2px solid $white;
+                    }
+                }
+                &:hover{
+                    &::before{
+                        width: 100%;
+                    }
+                }
+            }
+            & .cricketheader {
+                box-shadow: 0px 0px 6px rgba($black, 0.1) !important;
+                z-index: 1;
+                & .navtab {
+                    flex-wrap: nowrap;
+                    white-space: nowrap;
+                    overflow: auto hidden;
+                    & .nav-item {
+                        & .nav-link {
+                            font-size: 14px;
+                            font-weight: 600;
+                            transition: all 0.3s;
+                            border-bottom: 0.6px solid transparent;
+                            & .gameImg {
+                                height: 20px;
+                                & img {
+                                    filter: grayscale(1);
+                                    transition: all 0.3s;
+                                }
+                            }
+                            & .gamesheading {
+                                line-height: 100%;
+                            }
+                            &.active {
+                                background: transparent;
+                                border-color: darken($white, 20);
+                                color: $white !important;
+                                & .gameImg {
+                                    & img {
+                                        filter: grayscale(0);
+                                    }
+                                }
+                            }
+                            &:hover {
+                                color: $white !important;
+                                & .gameImg {
+                                    & img {
+                                        filter: grayscale(0);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            & .tabContents {
+                & .table {
+                    & thead {
+                        & tr {
+                            & th {
+                                & .icon {
+                                    width: 20px;
+                                    height: 20px;
+                                }
+                            }
+                        }
+                    }
+                    & tbody {
+                        & tr {
+                            border-bottom: 0.6px solid lighten($secondary, 0.5) !important;
+                            & .teamDetail {
+                                & .imgOuter {
+                                    width: 32px;
+                                    height: 32px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .informationOffcanvas {
+        background-color: lighten($black, 20) !important;
+        height: 40% !important;
+        & .offcanvas-body {
+            & .innerCard {
+                border-bottom: 0.6px solid rgba($secondary, 0.2);
+            }
+        }
+    }
+    .setReminderModal {
+        & .modal-dialog {
+            & .modal-content {
+                background-color: lighten($black, 20) !important;
+                & .modal-body {
+                    & .reminderImg {
+                        width: 50px;
+                    }
+                    & .timing {
+                        & span {
+                            width: 16px;
+                            height: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .mybetsCard {
+        background: linear-gradient(0deg, lighten($black, 10) 0%, lighten($black, 4) 100%);
+        & .card-body{
+            & .case {
+                & .caseHeading {
+                    color: lighten($success, 5);
+                    &.wonBtn {
+                        border: 2px solid lighten($success, 5);
+                        &.defeat {
+                            color: lighten($danger, 5);
+                            border-color: lighten($danger, 5);
+                        }
+                    }
+                    
+                }
+                & .caseEntry {
+                    & span {
+                        width: 18px;
+                        height: 18px;
+                    }
+                }
+            }
+        }
+    }
+    //! ************ [ Quiz Information Page End ] ******************
+    
+    // ************* [ QuestionPage Page Start ] ******************
+    .questionPage{
+        & .navtab {
+            flex-wrap: nowrap;
+            white-space: nowrap;
+            overflow: auto hidden;
+            & .nav-item {
+                & .nav-link {
+                    font-size: 14px;
+                    font-weight: 600;
+                    transition: all 0.3s;
+                    border-bottom: 0.6px solid transparent;
+                    & .gameImg {
+                        height: 20px;
+                        & img {
+                            filter: grayscale(1);
+                            transition: all 0.3s;
+                        }
+                    }
+                    & .gamesheading {
+                        line-height: 100%;
+                    }
+                    &.active {
+                        background: transparent;
+                        border-color: darken($white, 20);
+                        color: $white !important;
+                        & .gameImg {
+                            & img {
+                                filter: grayscale(0);
+                            }
+                        }
+                    }
+                    &:hover {
+                        color: $white !important;
+                        & .gameImg {
+                            & img {
+                                filter: grayscale(0);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .tabContents  {
+            & .questionAccordion {
+                & .accordion-item {
+                    & .accordion-header {
+                        background-color: lighten($black, 10);
+                        & span {
+                            min-width: 17px;
+                            min-height: 17px;
+                            position: relative;
+                            cursor: pointer;
+                            & img {
+                                position: absolute;
+                                inset: 0;
+                                transition: all 0.3s ease-in-out;
+                            }
+                            & .img2 {
+                                opacity: 0;
+                                visibility: hidden;
+                            }
+                            &.pin {
+                                & .img2 {
+                                    opacity: 1;
+                                    visibility: visible;
+                                }
+                                & .img1 {
+                                    opacity: 0;
+                                    visibility: hidden;
+                                }
+                            }
+                        }
+                        & .accordion-button {
+                            background-color: lighten($black, 10);
+                            &::after{
+                                background-image: url(../img/svg/downarrow.svg);
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                background-size: cover;
+                            }
+                        }
+                    }
+                    & .accordion-body {
+                        background-color: lighten($black, 10);
+                        & .answarcard {
+                            background-color: lighten($black, 20);
+                            // border: .6px solid $light;
+                            &.active {
+                                background-color: $theme1;
+                                & > div {
+                                    color: $white !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .questionPopup {
+        transition:  0.3s all ease-in-out;
+        // background-color: lighten($black, 20);
+        & .toast, & .form-select, & .toast-header {
+            // background-color: lighten($black, 20);
+            & .toast-header {
+                background: linear-gradient(86deg, $theme1 0%, $theme2 100%);
+                // & .form-select {
+                //     appearance: auto;
+                //     background: linear-gradient(86deg, $primary 0%, rgba(0,212,255,1) 100%);
+                //     &:focus{
+                //         border-color: $white;
+                //     }
+                // }
+                & .dropdownbtn {
+                    & .dropdown-toggle {
+                        background: transparent !important;
+                        & span {
+                            width: 22px;
+                        }
+                    }
+                    & .dropdown-menu {
+                        & li {
+                            & .dropdown-item {
+                                &:hover{
+                                    background: lighten($black, 10);
+                                    color: $white;
+                                }
+                                &:active{
+                                    background: lighten($black, 10);
+                                    color: $white;
+                                }
+                            }
+                        }
+                    }
+                }
+                & .form-switch {
+                    & .form-check-label {
+                        line-height: 100%;
+                    }
+                    & .form-check-input {
+                        height: 20px;
+                        width: 40px;
+                        border-color: $secondary;
+                        background-image: url(../img/svg/Charge1.svg);
+                        &:checked{
+                            background-color: $theme2;
+                        background-image: url(../img/svg/Chargefill.svg);
+                        }
+                        &:focus{
+                            border-color: $secondary;
+                        }
+                    }
+                }
+                & button {
+                    width: 17px;
+                }
+            }
+            & .toast-body {
+                & .toistCard {
+                    // background-color: lighten($black, 50);
+                    & .closeImg {
+                        width: 18px;
+                    }
+                    & .teamLogo {
+                        width: 16px;
+                        & img {
+                            filter: invert(1);
+                        }
+                    }
+                    & .inputgroup {
+                        & .form-control{
+                            // max-width: 100px;
+                            &:focus{
+                                border-color:  lighten($secondary, 40);
+                            }
+                        }
+                    }
+                }
+                & .choosePrich {
+                    & .selecotr-item {
+                        & .selector-item_radio {
+                            appearance: none;
+                            display: none;
+                        }
+                        & .selector-item_label {
+                            transition-duration: 0.5s;
+                            transition-property: transform, color, box-shadow;
+                            transform: none;
+                            cursor: pointer;
+                            border: 1px solid rgba($secondary, 0.8);
+                        }
+                        & .selector-item_radio:checked + .selector-item_label {
+                            // background-image: linear-gradient(to right, $theme1, $theme2);
+                            background-color: rgba($secondary, 1);
+                            color: $white;
+                            transform: translateY(-1px);
+                        }
+                        &.reportItem {
+                            & .selector-item_label {
+                                border: 2px solid transparent;
+                            }
+                            & .liveUserImg {
+                                border: 2px solid transparent;
+                            }
+                            & .selector-item_radio:checked + .selector-item_label {
+                                background-image: none;
+                                border-color: $theme1;
+                                background-color: $light;
+                                & .liveUserImg {
+                                    border-color: $danger;
+                                }
+                                & .card-title {
+                                    color: $danger !important;
+                                }
+                            }
+                        }
+                            &.reportreason {
+                            & .selector-item_label {
+                                border: 2px solid rgba($secondary, 0.2);
+                            }
+                            }
+                    }
+                }
+                & .deleteBtn {
+                    & span {
+                        width: 17px;
+                    }
+                }
+                & .switchImg {
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+            & .tcChack {
+                & .form-switch {
+                    flex-direction: row-reverse;
+                    & .form-check-label {
+                        line-height: 100%;
+                    }
+                    & .form-check-input{
+                        height: 20px;
+                        width: 40px;
+                        cursor: pointer;
+                        &:focus{
+                        border-color: rgba($black, 0.3) !important;
+                        filter: grayscale(1);
+                        }
+                    &:checked {
+                        background-color: $theme2;
+                        border-color: $theme2 !important;
+                        filter: grayscale(0);
+                    }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 991.99px) {
+        .questionPopup {
+            position: absolute !important;
+            width: 100%;
+            & .toast{
+                width: 100%;
+            }
+        }
+    }
+    //! ************* [ QuestionPage Page End ] ******** **********
+
+    // *************** [ Kyc Page Start] *******************
+    .kycPage {
+        & .navtab {
+            flex-wrap: nowrap;
+            white-space: nowrap;
+            overflow: auto hidden;
+            & .nav-item {
+                & .nav-link {
+                    font-size: 14px;
+                    font-weight: 600;
+                    transition: all 0.3s;
+                    border-bottom: 0.6px solid transparent;
+                    & .gameImg {
+                        height: 20px;
+                        & img {
+                            filter: grayscale(1);
+                            transition: all 0.3s;
+                        }
+                    }
+                    & .gamesheading {
+                        line-height: 100%;
+                    }
+                    &.active {
+                        background: transparent;
+                        border-color: darken($white, 20);
+                        color: $white !important;
+                        & .gameImg {
+                            & img {
+                                filter: grayscale(0);
+                            }
+                        }
+                    }
+                    &:hover {
+                        color: $white !important;
+                        & .gameImg {
+                            & img {
+                                filter: grayscale(0);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .tabContents {
+            & .mobileCard {
+                box-shadow: 0px 0px 6px rgba($black, 0.1);
+                background-color: lighten($black, 10);
+                & .card-body {
+                    & .mobileImg {
+                        width: 18px;
+                        display: inline-flex;
+                    }
+                    & .verifyMobile {
+                        font-size: 14px;
+                        line-height: 100%;
+                        color: lighten($success, 15);
+                        &.verifyPanDetails {
+                            color: $theme2;
+                        }
+                    }
+                    & .mobileLabel {
+                        font-size: 12px;
+                    }
+                    & .mobileFixLabel {
+                        color: lighten($success, 15);
+                    }
+                    & .form-control {
+                        font-size: 14px;
+                        background: transparent;
+                        &::placeholder{
+                            color: rgba($white, 0.6);
+                        }
+                    }
+                    & .pancardDetails, & .form-control, & .form-select {
+                        border-bottom: 0.6px solid rgba($secondary, 0.5) !important;
+                    }
+                    & .form-select {
+                        font-size: 14px;
+                        background: lighten($black, 10);
+                        border-radius: 0px;
+                        appearance: auto;
+                    }
+                    & .otpverfication {
+                        font-size: 10px;
+                    }
+                    & .sendVerification {
+                        color: lighten($success, 15);
+                    }
+                }
+                &.verifyEmail {
+                    border: 2px solid rgba($secondary, 0.5) !important;
+                }
+            }
+            & .verifyPanCard {
+                & .idCard {
+                    height: 50px;
+                }
+            }
+        }
+        & .otpModal {
+            background-color: rgba($black, 0.5);
+            & .innerModal {
+                & .modal-content {
+                    & .modal-body {
+                        & .card {
+                            & .card-body {
+                                & .form-control,
+                                & .enterCode {
+                                    font-size: 14px;
+                                }
+                                & .form-control {
+                                    border: 2px solid $white !important;
+                                    // width: 38px;
+                                    // height: 38px;
+                                    aspect-ratio: 10/10;
+                                    width: 40px;
+                                    height: 40px;
+                                    &::placeholder{
+                                        color: $white;
+                                    }
+                                }
+                                // & .otpBtn {
+                                    
+                                // }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //! *************** [ Kyc Page End] *******************
+
+    // * ************* [ Transection Page Start ] ***************
+    .transactionPage {
+        & .innerBody {
+            & .walletUl {
+                & .walletLi {
+                    background-color: lighten($black, 10);
+                    & .transactionBonus {
+                        color: lighten($success, 10);
+                        &.danger {
+                            color: lighten($danger, 10);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // ! ************* [ Transection Page End ] ***************
+
+    // * ************* [ Diposit Case Page Start ] ***************
+    .dipositCasePage {
+        & .innerBody{
+            & .choosePrich {
+                & .selecotr-item {
+                    & .selector-item_radio {
+                        appearance: none;
+                        display: none;
+                    }
+                    & .selector-item_label {
+                        transition-duration: 0.5s;
+                        transition-property: transform, color, box-shadow;
+                        transform: none;
+                        cursor: pointer;
+                        border: 1px solid rgba($secondary, 0.8);
+                    }
+                    & .selector-item_radio:checked + .selector-item_label {
+                        // background-image: linear-gradient(to right, $theme1, $theme2);
+                        background-color: rgba($secondary, 1);
+                        color: $white;
+                        transform: translateY(-1px);
+                    }
+                    // &.reportItem {
+                    //     & .selector-item_label {
+                    //         border: 2px solid transparent;
+                    //     }
+                    //     & .liveUserImg {
+                    //         border: 2px solid transparent;
+                    //     }
+                    //     & .selector-item_radio:checked + .selector-item_label {
+                    //         background-image: none;
+                    //         border-color: $theme1;
+                    //         background-color: $light;
+                    //         & .liveUserImg {
+                    //             border-color: $danger;
+                    //         }
+                    //         & .card-title {
+                    //             color: $danger !important;
+                    //         }
+                    //     }
+                    // }
+                    //     &.reportreason {
+                    //     & .selector-item_label {
+                    //         border: 2px solid rgba($secondary, 0.2);
+                    //     }
+                    //     }
+                }
+            }
+        }
+    }
+    // ! ************* [ Diposit Case Page End ] ***************
+
+    // * ************* [ Withdrow Page Start ] ***************
+    .withdrawPage{
+        & .innerBody {
+            & .mainCenterPart {
+                & .withdrawAmount {
+                    background-color: lighten($black , 10);
+                }
+                & .warningCard {
+                    background-color: lighten($black , 10);
+                    & .bankImg {
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+            }
+        }
+    }
+    // ! ************* [ Withdrow Page End ] ***************
+
+    // * *************** [Notification Page Start] ***************
+    .notificationPage{
+        & .mainCenterPart {
+            & .notificationCard {
+                background-color: lighten($black, 10);
+                & .contactImg {
+                    width: 32px;
+                    height: 32px;
+                }
+            }
+        }
+    }
+    // ! *************** [Notification Page End] ***************
+
+    // * *************[ Payment Page ] ******************
+    .paymentPage {
+        & .innerBody {
+            & .paymentCard {
+                & .paymentInnerBody {
+                    background-color: lighten($black, 10);
+                    & .card-body {
+                        & .paymentImg {
+                            border: 2px solid lighten($black, 10);
+                            height: 40px;
+                            width: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // ! *************[ Payment Page End ] **************
+
+
+}
+
